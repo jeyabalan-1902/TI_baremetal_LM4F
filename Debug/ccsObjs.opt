@@ -1,0 +1,5 @@
+"./main.obj"
+"./system_TM4C123.obj"
+"./tm4c1230h6pm_startup_ccs.obj"
+"../tm4c1230h6pm.cmd"
+-llibc.a
