@@ -24,7 +24,7 @@ void UART0_ReceiveString()
 {
     char received_char;
 
-    while (!(UART0->FR & (1 << 4)))  // Check if RX buffer is NOT empty
+    while ((UART0->FR & (1 << 6)) != 0)  // Check if RX buffer is NOT empty
     {
         received_char = UART0->DR;  // Read the received character
 
